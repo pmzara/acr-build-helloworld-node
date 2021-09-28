@@ -1,5 +1,4 @@
-ARG REGISTRY_NAME
-FROM ${REGISTRY_NAME}/baseimages/node:15-alpine
+FROM pmzara/baseimage:1
 
 COPY . /src
 RUN cd /src && npm install
